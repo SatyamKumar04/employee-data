@@ -1,7 +1,8 @@
-const jwt = require('jsonwebtoken'); // Corrected import statement for JWT
+const jwt = require('jsonwebtoken');
+
 
 const isAuthenticated = (req, res, next) => {
-    // Get the token from the request headers
+    
     const token = req.headers.authorization && req.headers.authorization.replace('Bearer ', '');
 
     if (token) {
