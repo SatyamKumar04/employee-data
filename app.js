@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 // Connect to MongoDB
 try {
-    mongoose.connect('mongodb://localhost/your-database-name', {
+    mongoose.connect('mongodb://localhost:27017/employee-data', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         serverSelectionTimeoutMS: 5000,
